@@ -1,0 +1,129 @@
+body{
+    color:white;
+    background-color:#226BC5;
+}
+
+nav{
+    background-color:#226BC5 ;
+    padding:2ch;
+    border-bottom:dotted 2px white;
+    position: fixed;
+    right:0;
+    left:0;
+}
+
+nav a{
+    text-decoration: none;
+    color:white;
+    font-size:20px;
+    transition: ease 1s;
+    padding:2px;
+}
+
+nav a:hover{
+    color:black;
+    background-color: white;
+}
+
+nav ul{
+    display:flex;
+    justify-content: space-evenly;
+    list-style:none;
+}
+
+table{
+    margin:auto;
+}
+
+th{
+    padding:0px 20px 0px 20px;
+    border-bottom:solid 2px white;
+}
+
+td{
+    border-bottom:solid 1px white;
+    padding:1ch;
+}
+
+h1{
+    text-align:center;
+    text-decoration: underline;
+}
+
+img{
+    width:300px;
+    height:300px;
+    border-radius:10%;
+}
+
+.container{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    transition:ease 1s;
+}
+
+/* changes cursor into a pointer and changes the scale of the class/img */
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+article h1{
+    text-decoration:none;
+}
+
+h3{
+    text-align:center;
+}
+
+/* changes the first letter of h3 font size and text colour */
+h3::first-letter{
+    font-size:20px;
+    color:red;
+}
+
+/* changes the first line of h3 into small caps*/
+h3::first-line{
+    font-variant:small-caps;
+}
+
+h5{
+    text-align:center;
+}
+
+/* displays/changes text into brown and background colour into white the h5 is selcted or clicked. */
+h5::selection{
+    color:brown;
+    background-color: white;
+}
+
+span::before {
+    color:yellowgreen;
+}
+
+/* Changes the first h1 element in body into darkgreen */
+body > h1:first-of-type{
+    color:darkgreen;
+}
+
+/* Changes the first child tr(row) background into orangered */
+tbody tr:first-child{
+    background-color:orangered;
+}
+
+/* box-sizing: border-box - border-box tells the browser to account for any border 
+and padding in the values you specify for an element'swidth and height. */
+/* Other ways to display colour -rgb() ,background-color  */
+.center{
+    display:flex;
+    justify-content: center;
+}
+/* specifies the bacground of the empty p tag */
+p:empty{
+    width:98%;
+    height:2px;
+    background-color: chartreuse;
+}
